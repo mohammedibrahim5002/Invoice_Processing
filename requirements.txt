@@ -1,0 +1,16 @@
+pytesseract
+opencv-python
+Pillow
+scikit-learn
+python-crfsuite
+numpy
+scipy
+pandas
+openpyxl
+matplotlib
+seaborn
+streamlit
+kaggle
+tqdm
+jupyter
+notebook
