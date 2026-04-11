@@ -59,9 +59,11 @@ from PIL import Image
 # eng.traineddata found at: C:\miniconda3\envs\ml_finance\share\tessdata
 # If you move environments or reinstall, update these two lines.
 
-os.environ['TESSDATA_PREFIX'] = r'C:\miniconda3\envs\ml_finance\share\tessdata'
-pytesseract.pytesseract.tesseract_cmd = r'C:\miniconda3\envs\ml_finance\Library\bin\tesseract.exe'
-
+import platform
+if platform.system() == 'Windows':
+    os.environ['TESSDATA_PREFIX'] = r'C:\miniconda3\envs\ml_finance\share\tessdata'
+    pytesseract.pytesseract.tesseract_cmd = r'C:\miniconda3\envs\ml_finance\Library\bin\tesseract.exe'
+# Linux (Streamlit Cloud): tesseract is on PATH after packages.txt install
 
 # ── Auto-detect Tesseract path (fallback for other machines) ──────────────────
 

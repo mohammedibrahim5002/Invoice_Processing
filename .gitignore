@@ -4,6 +4,5 @@ __pycache__/
 *.pyc
 .env
 data/raw/
-models/*.pkl
 outputs/
 .ipynb_checkpoints/
